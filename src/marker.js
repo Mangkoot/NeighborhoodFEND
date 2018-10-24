@@ -42,9 +42,7 @@ class Marker extends Component {
 
       bounds.extend(marker.position);
       map.fitBounds(bounds);
-
-
-      
+     
   }
 
   populateInfoWindow(marker, infowindow) {
@@ -58,7 +56,7 @@ class Marker extends Component {
           marker.setAnimation(null);
         }, 700);
 
-        infowindow.setContent('Loading...');
+        infowindow.setContent('Currently loading...');
         //Request for tips and photos via Foursquare API
         let venueId = null;
         let tipsList = null;
@@ -84,13 +82,13 @@ class Marker extends Component {
               if (tipsList && tipsList.response.tips.items) {
                 const tipsData = tipsList.response.tips.items;
                 const photosData = dataPhotos.response.photos.items;
-                  htmlResult = '<div class="infowindow-content"><h4>' + title + '</h4><p class="split"></p>';
+                  htmlResult = '<div class="infowindow-content"><h4>' + title + '</h4><div class="split"></div>';
                   
                   //Photos
                   htmlResult += '<h5> Photos </h5> <div id="photos-places">';
                   for(let i = 0; i < photosData.length; i++) {
                     const photo = photosData[i];
-                    htmlResult += `<img alt="${title}, photo ${i + 1} by a visitor" style="width: 30%; margin-right: 5px;" src="${photo.prefix}150x150${photo.suffix}" />`;
+                    htmlResult += `<img alt="${title}, photo ${i + 1} by a visitor" style="width: 30%; margin-right: 5px;" src="${photo.prefix}100x100${photo.suffix}" />`;
                   }
 
                   //Tips
