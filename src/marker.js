@@ -88,7 +88,7 @@ class Marker extends Component {
                   htmlResult += '<h5> Photos </h5> <div id="photos-places">';
                   for(let i = 0; i < photosData.length; i++) {
                     const photo = photosData[i];
-                    htmlResult += `<img alt="${title}, photo ${i + 1} by a visitor" style="width: 30%; margin-right: 5px;" src="${photo.prefix}100x100${photo.suffix}" />`;
+                    htmlResult += `<img alt="${title}, photo ${i + 1} by a visitor" style="width: 30%; margin-right: 5px;" src="${photo.prefix}150x150${photo.suffix}" />`;
                   }
 
                   //Tips
