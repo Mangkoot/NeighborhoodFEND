@@ -5,7 +5,9 @@
 
 #### Project overview
 In this project, I was given the task of creating a single-page application using *Google Maps API*, *React* and a *third-party API*.
+
 I chose *Foursquare*.
+
 The third-party API must be included in the Google Maps, to show additional info about the places that are pinpointed.
 
 
@@ -24,11 +26,16 @@ The third-party API must be included in the Google Maps, to show additional info
 
 #### How to
 You can not view this site by simply double-clicking the index.html.
+
 To view the site in a proper manner, download my [repo](https://github.com/Mangkoot/NeighborhoodFEND.git).
+
 CD into the *master* branch.
+
 Type *npm install*.
+
 Then type *npm start*.
 
 The project will now be available at **localhost:3000**.
+
 
 :+1: **GOOD LUCK** :+1:
